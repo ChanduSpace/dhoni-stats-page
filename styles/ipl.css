@@ -3,13 +3,17 @@
     width: 100vw;
     display: flex;
     scroll-snap-align: start;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
-.ipl-container{
-    height: 400px;
-    width: 900px;
-    background-color: brown;
-    
-    
+.ipl-stats-container{
+    height: 450px;
+    width: 800px;
+    background-image: url('../pics/97.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;   
+}
+.ipl-section img{
+    height: 450px;
 }

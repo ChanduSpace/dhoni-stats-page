@@ -3,15 +3,17 @@
     width: 100vw;
     display: flex;
     scroll-snap-align: start;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
-.odi-container{
-    height: 400px;
-    width: 900px;
+.odi-stats-container{
+    height: 450px;
+    width: 800px;
     background-image: url('../pics/t20back2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
+    border-radius: 20px;
+}
+.odi-section img{
+    height: 450px;
 }

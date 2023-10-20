@@ -1,17 +1,25 @@
 .test-section{
+    display: flex;
     height: 100vh;
     width: 100vw;
-    display: flex;
     scroll-snap-align: start;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+
 }
-.test-container{
-    height: 400px;
-    width: 900px;
+.test-stats-container{
+    height: 450px;
+    width: 800px;
     background-image: url('../pics/testback.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    
-    
+    background-size: cover;  
+    border-radius: 20px; 
+}
+.test-section img{
+    height: 450px;
+}
+.pic-stats-container{
+    display: flex;
+    margin-top: 8vh;
+
 }
