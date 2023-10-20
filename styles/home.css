@@ -1,0 +1,34 @@
+html{
+    scroll-snap-type: y mandatory;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-image: url('../pics/baa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.scroll-container{
+    width: 100vw;
+    height: 100vh;
+}
+.home-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    scroll-snap-align: start;
+    justify-content: center;
+    align-items: center;
+}
+.home-container{
+    height: 400px;
+    width: 900px;
+    
+    
+    
+}

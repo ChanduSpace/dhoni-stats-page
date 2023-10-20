@@ -1,0 +1,17 @@
+.odi-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    scroll-snap-align: start;
+    justify-content: center;
+    align-items: center;
+}
+.odi-container{
+    height: 400px;
+    width: 900px;
+    background-image: url('../pics/t20back2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
