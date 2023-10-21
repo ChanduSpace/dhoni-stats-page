@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="styles/t20.css">
     <link rel="stylesheet" href="styles/test.css">
     <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/gallery.css">
 </head>
 <body>
    <div class="scroll-container"> 
         <div class="navbar">
-            <p>MS Dhoni.</p>
+            <a href="#home" class="name"><p>MS Dhoni.</p></a>
             <div class="format">
                 <a href="#home">HOME</a>
                 <a href="#test">TEST</a>
@@ -32,8 +33,15 @@
                         <img class="main-pic" src="pics/dhoni7.PNG" alt="">
                         <div class="text-container">
                             <p>MAHENDRA SINGH DHONI.</p>
-                            <P>TEAM INDIA </P>
-                            <P>WICKETKEEPER BATSMAN</P>    
+                            <P class="teamindia">TEAM INDIA </P>
+                            <P>WICKETKEEPER BATSMAN (2004-2019)</P>    
+                        </div>
+                        <div class="info">
+                            <p class="qus">BORN: <span class="ans"> 07 july, 1981</span></p>
+                            <p class="qus">BATTING STYLE: <span class="ans"> Right hand Batsman</span></p>
+                        </div>
+                        <div class="gallery-button">
+                            <a href="#gallery">GALLERY</a>
                         </div>
                         <div class="scrolling-text">
                             <P>CAPTAIN OF TEAMINDIA WINNING CAPTAIN OF 3 ICC TROPHIES</P>
@@ -102,7 +110,9 @@
             </div>
         </div>
 
-
+        <div class="gallery-section" id="gallery">
+        
+        </div>
     </div>
 </body>
 </html>
