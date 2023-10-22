@@ -30,8 +30,8 @@
     0%{
         transform: translateX(-50%);
     }
-    100%{
-        transform: translateX(50%);
+    48%{
+        transform: translateX(0%);
     }
 }
 
