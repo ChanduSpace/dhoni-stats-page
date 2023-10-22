@@ -8,6 +8,10 @@
 }
 .t20-stats-container{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 450px;
     width: 800px;
     background-image: url('../pics/odiback2.jpg');
@@ -22,7 +26,7 @@
 
 
 .t20-stats-heading{
-    color: #0577D2;
+    color: #CCD0D9;
     font-family: 'Poppins', sans-serif;
     font-size: 30px; 
     font-weight: 800;
@@ -56,11 +60,11 @@
     height: 380px;
     width: 780px;
 }
-.left-table-container, .right-table-container{
+.t20-left-table-container, .t20-right-table-container{
     height: 350px;
     width: 338px;
 }
-.left-table, .right-table{
+.t20-left-table, .t20-right-table{
     border-collapse: collapse;
     width: 250px;
     height: 350px;  
@@ -69,12 +73,14 @@
     text-align: left;
     padding: 5px 20px;
 }
-.left-table tr,.right-table tr {
-    border-bottom: 1px solid #0577D2;   
+.t20-left-table tr,.t20-right-table tr {
+    border-bottom: 1px solid #0577D2;
+    color: #CCD0D9;   
 }
-.left-table tr td,.right-table tr td{
+.t20-left-table tr td,.t20-right-table tr td{
     width: 50px;   
+    color: whitesmoke;
 }
-.left-table tr:nth-of-type(even),.right-table tr:nth-of-type(even){
+.t20-left-table tr:nth-of-type(even),.t20-right-table tr:nth-of-type(even){
     background-color: rgba(128, 128, 128, 0.107);
 }
