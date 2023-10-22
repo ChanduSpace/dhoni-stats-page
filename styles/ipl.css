@@ -17,7 +17,8 @@
     background-image: url('../pics/97.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;   
+    border-radius: 20px; 
+    box-shadow: 2px 2px 15px black;  
 }
 .ipl-section img{
     height: 450px;

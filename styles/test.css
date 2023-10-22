@@ -19,6 +19,7 @@
     background-repeat: no-repeat;
     background-size: cover;  
     border-radius: 20px; 
+    box-shadow: 2px 2px 15px black;
 }
 .test-section img{
     height: 450px;
