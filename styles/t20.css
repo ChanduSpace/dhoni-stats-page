@@ -19,9 +19,28 @@
     background-size: cover;  
     border-radius: 20px;
     box-shadow: 2px 2px 15px black;
+
+    animation: right-to-left linear;
+    animation-timeline: view();
 }
+
+@keyframes right-to-left {
+    0%{
+        transform: translateX(50%);
+    }
+    45%{
+        transform: translateX(0%);
+    }
+    
+}
+
+
+
+
 .t20-section img{
     height: 450px;
+    animation: pop linear;
+    animation-timeline: view();
 }
 
 

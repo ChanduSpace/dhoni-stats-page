@@ -18,10 +18,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px; 
-    box-shadow: 2px 2px 15px black;  
+    box-shadow: 2px 2px 15px black;
+    
+    animation: left-to-right linear;
+    animation-timeline: view();
 }
 .ipl-section img{
     height: 450px;
+
+    animation: pop linear;
+    animation-timeline: view();
 }
 
 

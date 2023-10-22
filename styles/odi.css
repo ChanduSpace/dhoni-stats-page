@@ -19,9 +19,32 @@
     background-size: cover;
     border-radius: 20px;
     box-shadow: 2px 2px 15px black;
+    
+
+    animation: left-to-right linear;
+    animation-timeline: view();
 }
+
+
+@keyframes left-to-right {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(50%);
+    }
+}
+
+
+
+
+
+
 .odi-section img{
     height: 450px;
+
+    animation: pop linear;
+    animation-timeline: view();
 }
 
 
