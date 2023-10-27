@@ -90,3 +90,20 @@
 .ipl-left-table tr:nth-of-type(even),.ipl-right-table tr:nth-of-type(even){
     background-color: rgba(128, 128, 128, 0.107);
 }
+
+@media screen and (max-width: 700px) {
+    .pic-stats-container{
+        flex-direction: column;
+    }
+    .ipl-stats-container{
+        animation: none;
+        transform: scale(0.45);
+    }
+    .ipl-section img{
+        animation: none;
+        transform: scale(0.45);
+    }
+    .ipl-section{
+        justify-content: center;
+    }
+}

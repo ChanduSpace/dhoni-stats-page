@@ -1,7 +1,14 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
+
 body{
     padding: 0px;
     margin: 0px;
@@ -183,12 +190,57 @@ body{
 
 
 @media screen and (max-width: 700px) {
-    body{
-        height: 100vh;
-        width: 100vw;
+    html,body{
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .scroll-container{
+      
+    }
+    .home-container{
+    transform: scale();
+    }
+    .photo-wall{
+        top: 40px;
+        left: 5px;
+    }
+    .home-sub-container{
+        height: 730px;
+    }
+    .scrolling-text{
+        bottom: -40px;
+        display: none;
+    }
+
+    .scrolling-text p{
+        font-size: 120px;
+       
+    }
+    .text-container{
+        position: absolute;
+        bottom: 90px;
+        transform: scale(0.84);
+        width: 470px;
+        left: -28px;
+        z-index: 102;
+
+    }
+    .info{
+        bottom: 270px;
+        z-index: 103;
+        left: 10px;
+    }
+    .gallery-button{
+        display: none;
+    }
+    .main-pic{
+        left: auto;
+        right: 0;
+        bottom: 200px;
+        height: 300px;
+        border-bottom: 1px solid grey;
     }
 }
-
  
      
 

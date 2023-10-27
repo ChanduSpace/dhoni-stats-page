@@ -109,3 +109,22 @@
 .odi-left-table tr:nth-of-type(even),.odi-right-table tr:nth-of-type(even){
     background-color: rgba(128, 128, 128, 0.107);
 }
+
+
+
+@media screen and (max-width: 700px) {
+    .pic-stats-container{
+        flex-direction: column;
+    }
+    .odi-stats-container{
+        animation: none;
+        transform: scale(0.45);
+    }
+    .odi-section img{
+        animation: none;
+        transform: scale(0.45);
+    }
+    .odi-section{
+        justify-content: center;
+    }
+}
