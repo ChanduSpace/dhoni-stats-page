@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 700px) {
     .navbar{
-       display: none;
+    
        position: fixed;
        left: 0;
        top: 0px;
@@ -69,17 +69,17 @@
     }
     .navbar a p{
         margin: 0px;
-        font-size: 100px;
+        
     }
     .format{
-        gap: 90px;
+        gap: 5px;
 
         
     }
     .format a{
         border: none;
         box-shadow: none;
-        font-size: 60px;
+    
     }  
       
     

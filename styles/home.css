@@ -193,9 +193,12 @@ body{
     html,body{
       max-width: 100%;
       overflow-x: hidden;
+      scroll-snap-type: y mandatory;
+      scroll-behavior: smooth;
     }
-    .scroll-container{
-      
+    .home-section{
+        height: 100vh;
+        scroll-snap-align: start;
     }
     .home-container{
     transform: scale();
@@ -209,7 +212,6 @@ body{
     }
     .scrolling-text{
         bottom: -40px;
-        display: none;
     }
 
     .scrolling-text p{
@@ -223,7 +225,6 @@ body{
         width: 470px;
         left: -28px;
         z-index: 102;
-
     }
     .info{
         bottom: 270px;

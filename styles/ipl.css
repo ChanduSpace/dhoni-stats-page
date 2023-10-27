@@ -23,6 +23,10 @@
     animation: left-to-right linear;
     animation-timeline: view();
 }
+.ipl-pic-stats-container{
+    display: flex;
+    margin-top: 8vh;
+}
 .ipl-section img{
     height: 450px;
 
@@ -92,18 +96,45 @@
 }
 
 @media screen and (max-width: 700px) {
-    .pic-stats-container{
-        flex-direction: column;
+    .ipl-pic-stats-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 360px;
+        height: 700px;
+        margin-top: 21vh;
     }
     .ipl-stats-container{
         animation: none;
-        transform: scale(0.45);
+        width: 360px;
     }
     .ipl-section img{
-        animation: none;
-        transform: scale(0.45);
+        height: 350px;
     }
     .ipl-section{
         justify-content: center;
+        align-items: normal;
+    }
+
+    .ipl-table-container{
+        flex-direction: row;
+        width: 330px;
+        justify-content: left;
+        gap: 0px;
+    }
+    .ipl-left-table tr td,.ipl-right-table tr td{
+        text-align: right;
+        width: 50px;   
+    }  
+    .ipl-left-table, .ipl-right-table{
+        height: 330px;
+        width: 137px;
+    } 
+    .ipl-stats-container img{
+        bottom: 0;
+        left: 0;
+    }
+    .ipl-left-table-container, .ipl-right-table-container{
+        height: 320px;
+        width: 338px;
     }
 }
