@@ -200,9 +200,7 @@ body{
         height: 100vh;
         scroll-snap-align: start;
     }
-    .home-container{
-    transform: scale();
-    }
+   
     .photo-wall{
         top: 40px;
         left: 5px;

@@ -121,12 +121,16 @@
     .t20-stats-container{
         animation: none;
         width: 360px;
+
+        animation: slide linear;
+        animation-timeline: view();
+        animation-range: cover 0% contain 10% ;
     }
 
 
 
 
-    
+
     .t20-section img{
         height: 350px;
     }

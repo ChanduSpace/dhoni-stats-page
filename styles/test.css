@@ -130,10 +130,24 @@
     .test-stats-container{
         animation: none;
         width: 360px;
+
+
         animation: slide linear;
+        animation-timeline: view();
+        animation-range: cover 0% contain 10% ;
 
     }
-   
+
+   @keyframes slide {
+        0%{
+            transform: translateY(20%);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0%);
+            opacity: 1;
+        }
+   }
 
 
 
@@ -141,6 +155,8 @@
     .test-section img{
         height: 350px;
     }
+
+
     .test-section{
         justify-content: center;
         align-items: normal;
