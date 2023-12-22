@@ -1,167 +1,162 @@
-.odi-section{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    scroll-snap-align: start;
-    justify-content: right;
-    align-items: center;
+.odi-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  scroll-snap-align: start;
+  justify-content: right;
+  align-items: center;
 }
-.odi-stats-container{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 450px;
-    width: 800px;
-    background-image: url('../pics/t20back2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-    box-shadow: 2px 2px 15px black;
-    
+.odi-stats-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  width: 800px;
+  background-image: url("../pics/t20back2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px black;
 
-    animation: left-to-right linear;
-    animation-timeline: view();
+  animation: left-to-right linear;
+  animation-timeline: view();
 }
-
 
 @keyframes left-to-right {
-    0%{
-        transform: translateX(-50%);
-    }
-    48%{
-        transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(-50%);
+  }
+  48% {
+    transform: translateX(0%);
+  }
 }
 
+.odi-section img {
+  height: 450px;
 
-
-
-
-
-.odi-section img{
-    height: 450px;
-
-    animation: pop linear;
-    animation-timeline: view();
+  animation: pop linear;
+  animation-timeline: view();
 }
 
+.odi-stats-heading {
+  color: #ccd0d9;
 
-.odi-stats-heading{
-    color: #CCD0D9;
-    
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px; 
-    font-weight: 800;
-    margin: 0px;
-    margin-top: 10px;
-    text-align: center;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.449);
-    border-bottom: 3px solid #DFB770;
-    
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0px;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.449);
+  border-bottom: 3px solid #dfb770;
 }
-.odi-stats-container img{
-    position: absolute;
-    height: 450px;
-    bottom: 0;
-    opacity: 0.15;
-    left: 175px;
-    animation: turn 60s linear infinite;
+.odi-stats-container img {
+  position: absolute;
+  height: 450px;
+  bottom: 0;
+  opacity: 0.15;
+  left: 175px;
+  animation: turn 60s linear infinite;
 }
-@keyframes turn{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.odi-pic-stats-container{
-    display: flex;
-    margin-top: 8vh;
+.odi-pic-stats-container {
+  display: flex;
+  margin-top: 8vh;
 }
 
-
-.odi-table-container{
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 30px;
-    height: 380px;
-    width: 780px;
+.odi-table-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 30px;
+  height: 380px;
+  width: 780px;
 }
-.odi-left-table-container, .odi-right-table-container{
-    height: 350px;
-    width: 338px;
+.odi-left-table-container,
+.odi-right-table-container {
+  height: 350px;
+  width: 338px;
 }
-.odi-left-table, .odi-right-table{
-    border-collapse: collapse;
-    width: 250px;
-    height: 350px;  
-    font-size: 18px; 
-    font-family: 'Poppins', sans-serif;
-    text-align: left;
-    padding: 5px 20px;
+.odi-left-table,
+.odi-right-table {
+  border-collapse: collapse;
+  width: 250px;
+  height: 350px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  padding: 5px 20px;
 }
-.odi-left-table tr,.odi-right-table tr {
-    border-bottom: 1px solid #0577D2; 
-    color: #CCD0D9;  
+.odi-left-table tr,
+.odi-right-table tr {
+  border-bottom: 1px solid #0577d2;
+  color: #ccd0d9;
 }
-.odi-left-table tr td,.odi-right-table tr td{
-    width: 50px;
-    color: #CCD0D9;   
+.odi-left-table tr td,
+.odi-right-table tr td {
+  width: 50px;
+  color: #ccd0d9;
 }
-.odi-left-table tr:nth-of-type(even),.odi-right-table tr:nth-of-type(even){
-    background-color: rgba(128, 128, 128, 0.107);
+.odi-left-table tr:nth-of-type(even),
+.odi-right-table tr:nth-of-type(even) {
+  background-color: rgba(128, 128, 128, 0.107);
 }
-
-
 
 @media screen and (max-width: 700px) {
-    .odi-pic-stats-container{
-        flex-direction: column-reverse;
-        align-items: center;
-        height: 700px;
-        width: 360px;
-        margin-top: 21vh;
-    }
-    .odi-stats-container{
-        animation: none;
-        width: 360px;
+  .odi-pic-stats-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 700px;
+    width: 360px;
+    margin-top: 21vh;
+  }
+  .odi-stats-container {
+    animation: none;
+    width: 360px;
 
-        animation: slide linear;
-        animation-timeline: view();
-        animation-range: cover 0% contain 10% ;
-    }
-    .odi-section img{
-        height: 350px;
-    }
-    .odi-section{
-        justify-content: center;
-        align-items: normal;
-    }
-    .odi-table-container{
-        flex-direction: row;
-        width: 330px;
-        justify-content: left;
-        gap: 0px;
-    }
-    .odi-left-table tr td,.odi-right-table tr td{
-        text-align: right;
-        width: 50px;   
-    }  
-    .odi-left-table, .odi-right-table{
-        height: 330px;
-        width: 137px;
-    } 
-    .odi-stats-container img{
-        bottom: 0;
-        left: 0;
-    }
-    .odi-left-table-container, .odi-right-table-container{
-        height: 320px;
-        width: 338px;
-    }
-
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range: cover 0% contain 10%;
+  }
+  .odi-section img {
+    height: 350px;
+  }
+  .odi-section {
+    justify-content: center;
+    align-items: normal;
+  }
+  .odi-table-container {
+    flex-direction: row;
+    width: 330px;
+    justify-content: left;
+    gap: 0px;
+  }
+  .odi-left-table tr td,
+  .odi-right-table tr td {
+    text-align: right;
+    width: 50px;
+  }
+  .odi-left-table,
+  .odi-right-table {
+    height: 330px;
+    width: 137px;
+  }
+  .odi-stats-container img {
+    bottom: 0;
+    left: 0;
+  }
+  .odi-left-table-container,
+  .odi-right-table-container {
+    height: 320px;
+    width: 338px;
+  }
 }

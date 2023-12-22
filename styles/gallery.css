@@ -1,164 +1,152 @@
-.gallery-section{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    scroll-snap-align: start;
-    justify-content: center;
-    align-items: center;
+.gallery-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  scroll-snap-align: start;
+  justify-content: center;
+  align-items: center;
 }
-.gallery-container{
-    display: flex;
-    position: relative;
-    
-    justify-content: left;
-    height: 550px;
-    width: 1180px;
+.gallery-container {
+  display: flex;
+  position: relative;
 
-    border-bottom: 2px solid gray;
-}
-.moment-container-whole{
-    display: flex;
-    gap: 2px;
-    align-items: center;
-    justify-content: left;
-    height: 40vh;
-    width: 1170px;
-    margin-top: 10vh;
-    overflow-x: auto;
-    overflow-y: hidden;
-    border: 2px solid grey;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgb(255, 255, 255);
-}
-.moment-container-whole::-webkit-scrollbar{
-    width: auto;
-    
+  justify-content: left;
+  height: 550px;
+  width: 1180px;
 
+  border-bottom: 2px solid gray;
 }
-.moment-container-whole::-webkit-scrollbar-thumb{
-    color: rgb(255, 0, 0);
-    
+.moment-container-whole {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  justify-content: left;
+  height: 40vh;
+  width: 1170px;
+  margin-top: 10vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 2px solid grey;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+.moment-container-whole::-webkit-scrollbar {
+  width: auto;
+}
+.moment-container-whole::-webkit-scrollbar-thumb {
+  color: rgb(255, 0, 0);
 }
 
-.moment-container{
-    
-    height: 39vh;
-    width: auto;
-    margin-left: 4px;
-    border-radius: 10px;
-    margin-top: 20px;
+.moment-container {
+  height: 39vh;
+  width: auto;
+  margin-left: 4px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
-.moment-container img{
-    height: 30vh;
-    border-radius: 5px;
+.moment-container img {
+  height: 30vh;
+  border-radius: 5px;
 }
-.moment-container p{
-    font-family: 'Poppins', sans-serif;
-    vertical-align: middle;
-    text-align: center;
-    margin: 0px;
-    color: lightgray;
+.moment-container p {
+  font-family: "Poppins", sans-serif;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0px;
+  color: lightgray;
 }
-.frame-2{
-    position: absolute;
-    left: 20px;
-    bottom: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
-    height: 110px;
-    background-color: #d4d7dd;
-    border: 10px solid white;
-    box-shadow: 0px 0px 21px  rgba(0 ,0, 0, 0.5) inset, 0 15px 54px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
+.frame-2 {
+  position: absolute;
+  left: 20px;
+  bottom: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 110px;
+  background-color: #d4d7dd;
+  border: 10px solid white;
+  box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.5) inset,
+    0 15px 54px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 
-    animation: fade-in-up linear;
-    animation-timeline: scroll();
-}
-
-.poster{
-    width: 310px;
-    height: 90px;
-    object-fit: cover;
-    object-position: center;
-    border: 1px solid rgb(180, 174, 174);
-}
-.watch-now{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 110px;
-    width: 330px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    opacity: 0;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.link-text{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    
-}
-.watch-now:hover{
-    opacity: 1;
-    background-color: rgba(0, 0, 0, 0.434); 
-}
-.records{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 0;
-    bottom: 0;
-    align-items: center;
-    justify-content: center;
-    width: 58vw;
-    
-    
-    animation: fade-in-up linear;
-    animation-timeline: scroll();
-    transform: scale(0.9);
-
-}
-.records h2, .records ul{
-    margin: 0px;
-    font-family: 'Poppins', sans-serif;
-    color: aliceblue;
-
-
-}
-.records ul li{
-    margin: 8px;
-    font-size: 16px;
+  animation: fade-in-up linear;
+  animation-timeline: scroll();
 }
 
+.poster {
+  width: 310px;
+  height: 90px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgb(180, 174, 174);
+}
+.watch-now {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 110px;
+  width: 330px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.link-text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+.watch-now:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.434);
+}
+.records {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  width: 58vw;
+
+  animation: fade-in-up linear;
+  animation-timeline: scroll();
+  transform: scale(0.9);
+}
+.records h2,
+.records ul {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  color: aliceblue;
+}
+.records ul li {
+  margin: 8px;
+  font-size: 16px;
+}
 
 @keyframes fade-in-up {
-    96%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-    97%{
-        transform: translateY(10%);
-    }
-    100%{
-        transform: translateY(0%)
-    }
-    
-    
+  96% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  97% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
-
 
 @media screen and (max-width: 700px) {
-    .gallery-section{
-        display: none;
-    }
+  .gallery-section {
+    display: none;
+  }
 }
-
